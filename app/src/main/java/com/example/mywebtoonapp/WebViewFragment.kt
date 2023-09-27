@@ -29,7 +29,7 @@ class WebViewFragment(private val position: Int) : Fragment() {
 
         binding.webView.apply {
             webViewClient = WebtoonWebViewClient(binding.progressBar) {url ->
-                activity?.getSharedPreferences("WEB HISTORY", Context.MODE_PRIVATE)?.edit {
+                activity?.getSharedPreferences("WEB_HISTORY", Context.MODE_PRIVATE)?.edit {
                     putString("tab$position", url)
                 }
 
