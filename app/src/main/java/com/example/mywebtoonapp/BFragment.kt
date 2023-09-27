@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.mywebtoonapp.databinding.FragmentSecondBinding
-import com.example.mywebtoonapp.databinding.FragmentWebviewBinding
 
-class BFragmnet: Fragment() {
+class BFragment: Fragment() {
     private lateinit var binding : FragmentSecondBinding
 
     override fun onCreateView(
